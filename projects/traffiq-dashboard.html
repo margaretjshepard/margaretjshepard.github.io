@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF‑8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TraffiQ: Live Traffic Intelligence Dashboard – margaret's Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header class="hero" style="background:#0366d6; padding:2rem 0;">
+        <div class="container">
+            <h1 class="site-title">TraffiQ: Live Traffic Intelligence Dashboard</h1>
+            <p class="subtitle">Mar 2025 – Apr 2025 · William & Mary</p>
+        </div>
+    </header>
+    <section class="section">
+        <div class="container">
+            <p>
+                TraffiQ is a real‑time traffic intelligence dashboard that leverages live congestion data to help organizations make smarter decisions about road usage and transportation. The goal of the project was to show how businesses could use streaming data to support route planning, time management and operational decision‑making.
+            </p>
+            <p>
+                We collected traffic data from twenty manually defined zones across four U.S. cities using the TomTom Traffic API, refreshing the dataset every 30 seconds【355415436035554†screenshot】. To handle the streaming data, we integrated Google Pub/Sub for message handling and wrote a backend in Python to parse the API responses and standardize congestion metrics on a 0–1 scale. On the front end, we built an interactive dashboard in Plotly Dash where users can select a city and explore heat maps and dynamic visualizations of congestion levels in real time. This architecture allowed us to deploy a responsive web app that updates continuously as new data arrives【355415436035554†screenshot】.
+            </p>
+            <p>
+                During the presentation we demoed the live dashboard, discussed challenges such as manual geolocation and inconsistent metrics, and proposed improvements like user‑experience refinements, better reliability and predictive modelling. The project demonstrated the potential of combining streaming APIs, cloud message queues and modern Python visualisation frameworks to build decision‑support tools.
+            </p>
+            <h3>Technologies used</h3>
+            <ul>
+                <li>Python &amp; Plotly Dash for the interactive dashboard</li>
+                <li>Google Pub/Sub for streaming data ingestion</li>
+                <li>TomTom Traffic API for real‑time congestion data</li>
+                <li>Mapbox for base maps and heat map visualisations</li>
+            </ul>
+            <h3>Project materials</h3>
+            <ul>
+                <li><a href="https://github.com/your-username/traffiq-dashboard" target="_blank" rel="noopener">Source code on GitHub</a> (update with your repository)</li>
+                <li><a href="../assets/docs/traffiq-slides.pdf" target="_blank" rel="noopener">Presentation slides (PDF)</a> (placeholder – add your file)</li>
+                <li><a href="../assets/docs/traffiq-report.pdf" target="_blank" rel="noopener">Final report (PDF)</a> (placeholder – add your file)</li>
+                <li><a href="https://your-live-demo-url.com" target="_blank" rel="noopener">Live demo</a> (optional link to deployed dashboard)</li>
+            </ul>
+            <p><a href="../index.html" class="project-link">← Back to projects</a></p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> margaret. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
