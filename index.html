@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF‑8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margaret – Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header / Hero section -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="site-title">margaret's Project Portfolio</h1>
+            <p class="subtitle">Showcasing my work from W&M and Respondr</p>
+        </div>
+    </header>
+
+    <!-- About section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                <!-- Replace this paragraph with a short bio about yourself. Mention your role as an AI developer at Respondr, your time at William &amp; Mary, and your passion for building cool projects. -->
+                I'm an AI developer who loves building impactful projects. This site collects my favourite work so prospective employers can see what I’ve been up to.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects overview section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2>Projects</h2>
+            <p>Below are some of the projects I've worked on. Click through for details, technologies used, and presentation materials.</p>
+
+            <div class="project-grid">
+                <!-- Repeat this block for each project. Replace the placeholders with real content. -->
+                <!-- TraffiQ dashboard project -->
+                <article class="project-card">
+                    <h3>TraffiQ: Live Traffic Intelligence Dashboard</h3>
+                    <p class="project-description">A real‑time dashboard that ingests live congestion data from the TomTom API and visualizes traffic conditions across multiple cities to support route planning and transportation decisions.</p>
+                    <p class="project-tech"><strong>Tech stack:</strong> Python, Plotly Dash, Google Pub/Sub, TomTom Traffic API</p>
+                    <a href="projects/traffiq-dashboard.html" class="project-link">View details</a>
+                </article>
+
+                <!-- mArketIng recommendation engine -->
+                <article class="project-card">
+                    <h3>mArketIng: Personalized Recommendations</h3>
+                    <p class="project-description">A recommendation system that uses TensorFlow Recommenders and the Goodbooks‑10K dataset to suggest books and predict user ratings, demonstrating data‑driven marketing.</p>
+                    <p class="project-tech"><strong>Tech stack:</strong> Python, TensorFlow Recommenders, Web App</p>
+                    <a href="projects/marketing-recommendations.html" class="project-link">View details</a>
+                </article>
+
+                <!-- NHS admissions dashboard -->
+                <article class="project-card">
+                    <h3>NHS Admissions: Deconstruct &amp; Rebuild</h3>
+                    <p class="project-description">Reverse‑engineered an existing Tableau dashboard on hospital admissions, then redesigned it with clearer layouts, better colour contrast and interactive filtering.</p>
+                    <p class="project-tech"><strong>Tech stack:</strong> Tableau, Data Visualization</p>
+                    <a href="projects/nhs-dashboard.html" class="project-link">View details</a>
+                </article>
+
+                <!-- Heart Smart prediction project -->
+                <article class="project-card">
+                    <h3>Heart Smart: Heart Attack Predictions</h3>
+                    <p class="project-description">Explored a rich medical dataset and built predictive models to identify factors associated with heart attacks using logistic regression and k‑nearest neighbours.</p>
+                    <p class="project-tech"><strong>Tech stack:</strong> Predictive analytics, Logistic Regression, KNN</p>
+                    <a href="projects/heart-smart.html" class="project-link">View details</a>
+                </article>
+
+                <!-- RLAT election security project -->
+                <article class="project-card">
+                    <h3>Robust Logic &amp; Accuracy Testing (RLAT)</h3>
+                    <p class="project-description">Research exploring a more reliable election audit method. RLAT uses optimisation techniques to guarantee detection of ballot misconfigurations and improve election integrity.</p>
+                    <p class="project-tech"><strong>Tech stack:</strong> Mixed‑Integer Linear Programming, Optimisation</p>
+                    <a href="projects/rlat-election-security.html" class="project-link">View details</a>
+                </article>
+
+                <!-- Police call trends warehouse -->
+                <article class="project-card">
+                    <h3>Dialing Into Data: Police Call Trends</h3>
+                    <p class="project-description">Designed a data warehouse and Tableau dashboards to analyse Virginia Beach police call trends, including heatmaps, trend analysis and response‑time charts.</p>
+                    <p class="project-tech"><strong>Tech stack:</strong> MySQL, ETL, Tableau</p>
+                    <a href="projects/dialing-data.html" class="project-link">View details</a>
+                </article>
+
+                <!-- Reszpondr chat assistant project -->
+                <article class="project-card">
+                    <h3>Reszpondr: RP Chat Assistant</h3>
+                    <p class="project-description">A multilingual incident‑management chatbot that uses GPT‑3.5 and retrieval‑augmented generation to classify messages, detect emergencies, summarise conversations and integrate with Slack and voice interfaces.</p>
+                    <p class="project-tech"><strong>Tech stack:</strong> Python (Flask), GPT‑3.5 Turbo, Slack Webhooks, Cloudflare Tunnel, Whisper</p>
+                    <a href="projects/reszpondr-chatbot.html" class="project-link">View details</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, feel free to reach out via email or connect on LinkedIn.</p>
+            <ul class="contact-list">
+                <li><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">your-profile</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/your-username" target="_blank" rel="noopener">your-username</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> margaret. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
